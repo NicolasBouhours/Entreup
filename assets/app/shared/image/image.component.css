@@ -1,0 +1,20 @@
+.round-32x32 {
+  border-radius: 32px;
+}
+
+.round-64x64 {
+  border-radius: 32px;
+}
+
+.round-96x96 {
+  border-radius: 32px;
+}
+
+.round-140x140 {
+  border-radius: 70px;
+}
+
+.is-140x140 {
+  width: 140px;
+  height: 140px;
+}

@@ -1,0 +1,23 @@
+<nav class="nav">
+  <div class="nav-left">
+    <a class="nav-item is-brand" [routerLink]="['/']">
+      <h3 class="title is-3">Mean</h3>
+    </a>
+  </div>
+
+
+  <div class="nav-right nav-menu">
+    <a class="nav-item" [routerLink]="['/auth', 'signup']" *ngIf="!isLoggedIn()">
+      S'inscrire
+    </a>
+    <a class="nav-item" [routerLink]="['/auth','signin']" *ngIf="!isLoggedIn()"> 
+      Connexion
+    </a>
+    <a class="nav-item" [routerLink]="['/profile']" *ngIf="isLoggedIn()">
+      Profil
+    </a>
+    <a class="nav-item" (click)="onLogout()" *ngIf="isLoggedIn()">
+      Déconnexion
+    </a>
+  </div>
+</nav>

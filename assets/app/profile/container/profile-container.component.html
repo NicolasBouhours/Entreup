@@ -1,0 +1,29 @@
+<div class="page-container">
+  <div id="profile-container" class="container">
+    <div class="columns">
+      <div class="profile-routing column is-narrow is-4">
+        <ul>
+          <li routerLinkActive="is-active" [routerLink]="['/profile', 'info']">
+            <a>
+              <span>Compte</span>
+            </a>
+          </li>
+          <li routerLinkActive="is-active" [routerLink]="['/profile', 'password']">
+            <a>
+              <span>Mot de passe</span>
+            </a>
+          </li>
+          <li routerLinkActive="is-active" [routerLink]="['/profile', 'picture']">
+            <a>
+              <span>Photo de profil</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="column is-8 is-narrow">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
