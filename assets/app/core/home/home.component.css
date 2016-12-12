@@ -1,3 +1,108 @@
 #home {
   min-height: 90vh;
 }
+
+#imageText, #header {
+  position: absolute;
+  z-index: 100;
+  height: 100vh;
+  width: 100%;
+}
+
+#background-image {
+  filter: grayscale(0.7);
+}
+
+.sport {
+  min-width: 200px;
+}
+
+#header h2 {
+  color: #363636;
+}
+
+#textContainer {
+  color: white;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.white {
+  color: white;
+}
+
+.orange {
+  background-color: #ec7e6e;
+  color: white;
+}
+
+#header-title {
+  margin: 10px;
+  font-size: 40px;
+}
+
+.sport {
+  color: #ec7e6e;
+  font-weight: bold;
+}
+
+#button-container {
+  float: right;
+  margin: 8px;
+}
+
+#top-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#slogan, #pub, #bottom {
+  height: 33vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#slogan-container, #pub-container, #bottom-container {
+  position: relative;
+}
+
+.vertical-align-center {
+  top: 33%;
+  width: 100%;
+  height: 100%;
+}
+
+.vertical-align-top {
+  transform: translateY(-50%);
+}
+
+#pub {
+  background-color: #282f39;
+}
+
+#pub, #pub h4, #pub p, #pub .icon {
+  color: white;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.detail {
+  margin-top: 33%;
+  transform: translateY(-50%);
+}
+
+#footer p {
+  font-size: 12px;
+}
+
+#footer .icon {
+  height: 12px;
+  line-height: 12px;
+  font-size: 11px;
+}
