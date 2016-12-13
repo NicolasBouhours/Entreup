@@ -1,3 +1,4 @@
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './layout/home/home.component';
 import { AuthGuard } from './shared/guards/auth.guard';
 import { JwtService } from './shared/services/jwt.service';
@@ -24,7 +25,8 @@ import { NotificationComponent } from './shared/notification/notification.compon
         HeaderComponent,
         NotificationComponent,
         ProfileContainerComponent,
-        HomeComponent
+        HomeComponent,
+        DashboardComponent
     ],
     imports: [
         BrowserModule, 

@@ -1,0 +1,86 @@
+#dashboard-navbar, #dashboard-content {
+    height: 100%;
+}
+
+#dashboard-navbar {
+    background-color: #363636;
+    width: 150px;
+    color: whitesmoke;
+}
+
+#dashboard-navbar .icon {
+    color: wheat;
+}
+
+#dashboard-content {
+    background-color: #f4f5f7;
+}
+
+#menu-navigation-icon {
+    color: grey;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.menu-navigation-item {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#menu-navigation-signout {
+    bottom: 0;
+    position: absolute;
+    margin-left: 17px;
+    margin-bottom: 20px;
+}
+
+#dashboard-container {
+    margin-top: 0px;
+}
+
+#content-activity-container, #user-activity-container {
+    margin: 20px;
+}
+
+.content-activity-item, .user-activity-item {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card {
+    width: 100%;
+}
+
+.card img {
+    filter: blur(2px)brightness(0.9);
+}
+
+.img-title {
+    position: absolute;
+    color: white;
+    z-index: 150;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+}
+
+#user-info {
+    width: 100%;
+    height: auto;
+}
+
+.user-activity-item .icon {
+    line-height: 20px;
+    font-size: 15px;
+    width: 20px;
+}
+
+.user-activity-item hr {
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.user-activity-item-content {
+    min-height: 132px;
+}

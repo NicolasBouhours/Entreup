@@ -38,7 +38,7 @@ export class SigninComponent {
                     this.jwtService.saveToken(data.token);
                     this.authService.logUser(data.userId);
                     this.myForm.reset();
-                    this.router.navigateByUrl('/');
+                    this.router.navigate(['/dashboard']);
                 },
                 error => this.notificationService.handleNotification(error.title, 'danger')
         );

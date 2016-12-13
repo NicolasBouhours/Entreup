@@ -44,6 +44,10 @@ html, body {
   color: white;
 }
 
+.is-fullheight {
+  height: 100%;
+}
+
 .bold {
   font-weight: bold;
 }
