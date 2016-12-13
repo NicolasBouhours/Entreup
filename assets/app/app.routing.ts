@@ -1,8 +1,8 @@
+import { HomeComponent } from './layout/home/home.component';
 import { AuthGuard } from './shared/guards/auth.guard';
 import { ProfileContainerComponent } from './profile/container/profile-container.component';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './core/home/home.component';
 
 
 const APP_ROUTES: Routes = [

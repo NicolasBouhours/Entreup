@@ -1,15 +1,46 @@
-.signup-icon {
-  color: #dbdbdb;
-}
+/*
+blanc moyen (#f4f5f7)
+#d1d2d4 (gris)
+#f3f3f5 (blanc)
+#ec7e6e (orange)
+#f6be61 (jaune)
+#363636 light black
+*/
 
-#signup-img-container {
+#signup-container {
   height: 100%;
-  width: 150px;
+  width: 100%;
+  background-color: #f4f5f7;
 }
 
-#signup-image {
-  position: absolute;
+#signup-form {
+  width: 400px;
+  height: 330px;
   top: 50%;
-  transform: translateY(-50%);
-  width: 130px;
+  left: 50%;
+  transform: translateY(-50%)translateX(-50%);
+  position: absolute;
+}
+
+#signup-helper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #363636;
+  color: whitesmoke;
+  height: 50px;
+}
+
+#signup-helper .icon {
+  font-size: 12px;
+  height: 12px;
+  line-height: 20px;
+}
+
+#signup-helper .columns {
+  margin-bottom: 0px;
+}
+
+.border-right {
+  border: 1px solid #ec7e6e;
 }

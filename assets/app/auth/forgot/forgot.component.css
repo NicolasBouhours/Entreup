@@ -2,8 +2,12 @@
   margin: 30px;
 }
 
+#forgot-title {
+  font-weight: bold;
+}
+
 .icon .fa-heartbeat {
-  color: #ff3860;
+  color: #ec7e6e;
 }
 
 #forgot-button-container {

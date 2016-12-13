@@ -2,8 +2,12 @@
   margin: 30px;
 }
 
+#reset-title {
+  font-weight: bold;
+}
+
 .icon .fa-heart {
-  color: #ff3860;
+  color: #ec7e6e;
 }
 
 #reset-button-container {

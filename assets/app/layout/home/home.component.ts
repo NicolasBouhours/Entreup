@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
     ngOnInit() {
         let timer = Observable.timer(3000,3000);
-        let sportChangeSubscrition = timer.subscribe(t=> {
+        this.sportChangeSubscrition = timer.subscribe(t=> {
             this.onChangeActivity();
         });
     }

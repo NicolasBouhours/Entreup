@@ -1,22 +1,4 @@
 <figure id="top-container" class="image">
-    <div id="header">
-        <div class="columns">
-            <div class="column is-6">
-                <h2 class="title is-6"><span id="header-title" class="bold">Sportcorp</span></h2>
-            </div>
-            <div class="column is-6">
-                <div id="button-container" class="columns">
-                    <div class="column i-12 has-text-centered">
-                        <a class="button orange">Connexion</a>
-                    </div>
-
-                    <div class="column i-12 has-text-centered">
-                        <a class="button is-info">S'inscrire</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div id="imageText">
         <div id="textContainer">
             <div class="columns">
@@ -31,7 +13,25 @@
             </div>
             <div class="columns">
                 <div class="column i-12 has-text-centered">
-                    <a class="button is-large is-info">En découvrir plus</a>
+                    <a class="button is-large is-info" [routerLink]="['/auth', 'signin']">Rejoins nous !</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <div class="columns">
+            <div class="column is-6">
+                <h2 class="title is-6"><span id="header-title" class="bold">Sportcorp</span></h2>
+            </div>
+            <div class="column is-6">
+                <div id="button-container" class="columns">
+                    <div class="column i-12 has-text-centered">
+                        <a class="button orange" [routerLink]="['/auth', 'signin']">Connexion</a>
+                    </div>
+
+                    <div class="column i-12 has-text-centered">
+                        <a class="button is-info" [routerLink]="['/auth', 'signup']">S'inscrire</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@
                 <div class="column is-8 is-offset-2 full-height">
                     <div class="detail">
                         <span class="icon is-large">
-                            <i class="fa fa-map-marker "></i>
+                            <i class="fa fa-map-marker"></i>
                         </span>
                         <h4 class="title is-4">Planifier vos activités</h4>
                         <p>
@@ -83,7 +83,7 @@
                 <div class="column is-8 is-offset-2 full-height">
                     <div class="detail">
                         <span class="icon is-large">
-                            <i class="fa fa-envelope-open "></i>
+                            <i class="fa fa-envelope-open"></i>
                         </span>
                         <h4 class="title is-4">Garder le contact</h4>
                         <p>

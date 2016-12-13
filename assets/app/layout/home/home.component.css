@@ -9,6 +9,10 @@
   width: 100%;
 }
 
+#header {
+  z-index: 200;
+}
+
 #background-image {
   filter: grayscale(0.7);
 }
@@ -77,11 +81,15 @@
 }
 
 #pub {
-  background-color: #282f39;
+  background-color: #363636;
 }
 
 #pub, #pub h4, #pub p, #pub .icon {
   color: white;
+}
+
+#pub .icon .fa {
+  color: #ec7e6e;
 }
 
 .full-height {
@@ -89,13 +97,14 @@
 }
 
 #footer p {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #footer .icon {
   height: 12px;
-  line-height: 12px;
-  font-size: 11px;
+  line-height: 15px;
+  font-size: 12px;
+  width: 15px;
 }
 
 #pub-container, #slogan-container, #bottom-container {

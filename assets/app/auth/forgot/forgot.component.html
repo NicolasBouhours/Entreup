@@ -1,9 +1,10 @@
 <div class="page-container">
+    <app-home-icon></app-home-icon>
     <div class="container vertical-center">
         <div class="columns is-vcentered">
             <div class="column is-6 is-offset-3 has-text-centered">
                 <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-                    <h3 id="forgot-title" class="title is-3 ">Vous avez perdu votre mot de passe ?</h3>
+                    <h3 id="forgot-title" class="title is-2">Vous avez perdu votre mot de passe ?</h3>
                     <span class="icon is-large">
                         <i class="fa fa-heartbeat"></i>
                     </span>
@@ -15,7 +16,7 @@
                     <div id="forgot-button-container" class="columns">
                         <div class="column is-half is-offset-one-quarter">
                             <p class="control">
-                                <button type="submit" class="button is-primary is-fullwidth" [disabled]="!myForm.valid">Récupèrer mon mot de passe</button>
+                                <button type="submit" class="button is-orange is-fullwidth" [disabled]="!myForm.valid">Récupèrer mon mot de passe</button>
                             </p>
                         </div>
                     </div>

@@ -1,3 +1,4 @@
+import { HomeComponent } from './layout/home/home.component';
 import { AuthGuard } from './shared/guards/auth.guard';
 import { JwtService } from './shared/services/jwt.service';
 import { ApiService } from './shared/services/api.service';
@@ -12,8 +13,6 @@ import { routing } from './app.routing';
 
 import { NotificationService } from './shared/notification/notification.service';
 
-import { CoreModule } from './core/core.module';
-
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from './layout/header/header.component';
 import { ProfileContainerComponent } from './profile/container/profile-container.component';
@@ -24,14 +23,14 @@ import { NotificationComponent } from './shared/notification/notification.compon
         AppComponent,
         HeaderComponent,
         NotificationComponent,
-        ProfileContainerComponent
+        ProfileContainerComponent,
+        HomeComponent
     ],
     imports: [
         BrowserModule, 
         routing, 
         ReactiveFormsModule,
-        HttpModule,
-        CoreModule,
+        HttpModule
     ],
     providers: [
         JwtService,

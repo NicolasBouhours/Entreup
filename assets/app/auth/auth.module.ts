@@ -1,3 +1,4 @@
+import { HomeIconComponent } from './helpers/home-icon.component';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from './../shared/shared.module';
@@ -14,7 +15,8 @@ import { ResetComponent } from './reset/reset.component';
         SigninComponent,
         SignupComponent,
         ForgotComponent,
-        ResetComponent
+        ResetComponent,
+        HomeIconComponent
     ],
     imports: [
         SharedModule,
