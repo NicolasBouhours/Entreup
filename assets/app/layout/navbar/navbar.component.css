@@ -1,0 +1,31 @@
+#navbar {
+    height: 100%;
+}
+
+#navbar {
+    background-color: #363636;
+    width: 150px;
+    color: whitesmoke;
+}
+
+#navbar .icon {
+    color: wheat;
+}
+
+#menu-navigation-icon {
+    color: grey;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.menu-navigation-item {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#menu-navigation-signout {
+    bottom: 0;
+    position: absolute;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}

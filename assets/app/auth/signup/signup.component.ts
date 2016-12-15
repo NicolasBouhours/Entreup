@@ -12,6 +12,7 @@ import { NotificationService } from '../../shared/notification/notification.serv
 })
 export class SignupComponent implements OnInit {
     myForm: FormGroup;
+    testDate: Date;
 
     constructor(private authService: AuthService, 
                 private notificationService: NotificationService,
@@ -21,6 +22,9 @@ export class SignupComponent implements OnInit {
         this.myForm = new FormGroup({
             firstName: new FormControl(null, Validators.required),
             lastName: new FormControl(null, Validators.required),
+            zipcode: new FormControl(null, Validators.required),
+            city: new FormControl(null, Validators.required),
+            birthday: new FormControl(null, Validators.required),
             email: new FormControl(null, [
                 Validators.required,
                 Validators.pattern('^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$')
@@ -37,7 +41,9 @@ export class SignupComponent implements OnInit {
             this.myForm.value.firstName, 
             this.myForm.value.lastName
         );
-        this.authService.signup(user)
+        console.log(user);
+        console.log('date',this.testDate);
+        /*this.authService.signup(user)
             .subscribe(
                 (data) => {
                     this.notificationService.handleNotification(data.message, 'primary');
@@ -47,6 +53,6 @@ export class SignupComponent implements OnInit {
                    this.notificationService.handleNotification(error.title, 'danger');
                 }
             );
-        this.myForm.reset();
+        this.myForm.reset();*/
     }
 }

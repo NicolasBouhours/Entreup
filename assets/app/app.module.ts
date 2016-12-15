@@ -1,3 +1,5 @@
+import { ProfileComponent } from './dashboard/profile.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './layout/home/home.component';
 import { AuthGuard } from './shared/guards/auth.guard';
@@ -26,7 +28,10 @@ import { NotificationComponent } from './shared/notification/notification.compon
         NotificationComponent,
         ProfileContainerComponent,
         HomeComponent,
-        DashboardComponent
+
+        DashboardComponent,
+        ProfileComponent,
+        NavbarComponent
     ],
     imports: [
         BrowserModule, 
