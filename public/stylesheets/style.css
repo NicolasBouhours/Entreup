@@ -69,6 +69,30 @@ html, body {
   padding-left: 32px !important;
 }
 
+.is-vertical-align-center {
+  top: 50%;
+  transform: translateY(-50%)translateX(-50%);
+  position: absolute;
+}
+
+.profile-card {
+    height: auto;
+    min-height: 150px;
+    background-color: white;
+    width: 100%;
+    position: relative;
+}
+
+.profile-card-content {
+    margin: 20px;
+    padding: 20px;
+}
+
+.profile-card-content .icon {
+    color: #d1d2d4;
+}
+
+
 /*
 blanc moyen (#f4f5f7)
 #d1d2d4 (gris)

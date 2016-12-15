@@ -13,3 +13,7 @@
 #profile-picture-button {
   margin-bottom: 20px;
 }
+
+.is-warning {
+    color: white;
+}

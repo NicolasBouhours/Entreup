@@ -1,5 +1,5 @@
-import { ProfileComponent } from './dashboard/profile.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
+import { SharedModule } from './shared/shared.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './layout/home/home.component';
 import { AuthGuard } from './shared/guards/auth.guard';
@@ -18,7 +18,6 @@ import { NotificationService } from './shared/notification/notification.service'
 
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from './layout/header/header.component';
-import { ProfileContainerComponent } from './profile/container/profile-container.component';
 import { NotificationComponent } from './shared/notification/notification.component';
 
 @NgModule({
@@ -26,17 +25,13 @@ import { NotificationComponent } from './shared/notification/notification.compon
         AppComponent,
         HeaderComponent,
         NotificationComponent,
-        ProfileContainerComponent,
         HomeComponent,
-
         DashboardComponent,
-        ProfileComponent,
         NavbarComponent
     ],
     imports: [
         BrowserModule, 
         routing, 
-        ReactiveFormsModule,
         HttpModule
     ],
     providers: [

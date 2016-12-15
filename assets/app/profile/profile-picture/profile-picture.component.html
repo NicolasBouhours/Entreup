@@ -1,0 +1,24 @@
+<div class="profile-card">
+    <div class="profile-card-content columns is-fullheight">
+        <div class="column is-2 has-text-centered">
+            <div class="icon is-large is-vertical-align-center ">
+                <i class="fa fa-file-picture-o"></i>
+            </div>
+        </div>
+        <div class="column is-10 has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-8 is-offset-2 has-text-centered">
+                    <div id="profile-info-picture" class="has-text-centered">
+                        <app-image [url]="picture" size="140x140" type="picture" align="center"></app-image>
+                    </div>
+                </div>
+            </div>
+            <div class="columns" id="profile-picture-button">
+                <div class="column is-8 is-offset-2 has-text-centered">
+                    <label for="file" class="button is-warning">Modifier ma photo de profil</label>
+                    <input id="file" type="file" (change)="handleUpload($event)" />
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>

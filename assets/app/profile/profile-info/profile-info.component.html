@@ -1,0 +1,34 @@
+<div class="profile-card">
+    <form [formGroup]="formProfile" (ngSubmit)="onSubmit()">
+        <div class="profile-card-content columns is-fullheight">
+            <div class="column is-2 has-text-centered">
+                <div class="icon is-large is-vertical-align-center ">
+                    <i class="fa fa-user"></i>
+                </div>
+            </div>
+            <div class="column is-10">
+                <label for="firstName" class="label">Prénom</label>
+                <p class="control has-icon">
+                    <input type="text" id="firstName" class="input" 
+                        formControlName="firstName"  placeholder="Prénom">
+                        <i class="signup-icon fa fa-user-circle-o"></i>
+                </p>
+                <label for="lastName" class="label">Nom</label>
+                <p class="control has-icon">
+                    <input type="text" id="lastName" class="input" 
+                        formControlName="lastName" placeholder="Nom">
+                        <i class="signup-icon fa fa-user-circle"></i>
+                </p>
+                <label for="description" class="label">Présentation</label>
+                <p class="control">
+                    <textarea id="description" class="textarea" placeholder="Présentation"></textarea>
+                </p>
+            </div>
+        </div>
+        <div class="profile-card-valid columns is-fullheight">
+            <div class="column is-6 is-offset-3 has-text-centered">
+                <button type="submit" class="button is-success">Modifier mes informations personnelles</button>
+            </div>
+        </div>
+        </form>
+    </div>

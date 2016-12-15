@@ -35,7 +35,7 @@ export class ProfilePictureComponent {
                 .catch((error) => {
                     this.notificationService.handleNotification(error.title, 'danger');
                 }).then((data) => {
-                    this.notificationService.handleNotification(data.message, 'primary');
+                    this.notificationService.handleNotification(data.message, 'success');
                     this.picture = data.obj;
                 });
             } else {

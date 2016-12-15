@@ -1,0 +1,19 @@
+#profile-container {
+    height: 100%;
+    background-color: #f4f5f7;
+    margin-top: 0px;
+}
+
+#profile-content {
+    margin: 30px;
+}
+
+
+
+/*
+blanc moyen (#f4f5f7)
+#d1d2d4 (gris)
+#f3f3f5 (blanc)
+#ec7e6e (orange)
+#f6be61 (jaune)
+*/
