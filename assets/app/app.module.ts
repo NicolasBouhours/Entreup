@@ -1,6 +1,6 @@
+import { AppContainerComponent } from './layout/app-container/app-container.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { SharedModule } from './shared/shared.module';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './layout/home/home.component';
 import { AuthGuard } from './shared/guards/auth.guard';
 import { JwtService } from './shared/services/jwt.service';
@@ -26,8 +26,8 @@ import { NotificationComponent } from './shared/notification/notification.compon
         HeaderComponent,
         NotificationComponent,
         HomeComponent,
-        DashboardComponent,
-        NavbarComponent
+        NavbarComponent,
+        AppContainerComponent
     ],
     imports: [
         BrowserModule, 

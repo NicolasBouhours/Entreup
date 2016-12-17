@@ -1,0 +1,11 @@
+#app-container-content {
+    height: 100%;
+}
+
+#app-container {
+    margin-top: 0px;
+}
+
+#app-container-content {
+    background-color: #f4f5f7;
+}
